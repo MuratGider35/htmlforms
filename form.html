@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formlar</title>
+    <style>
+        #tatlı{
+            border: 2px solid red;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Clarusway</h1>
@@ -71,6 +77,33 @@
         <div>
             <label for="tel">telefon no giriniz</label>
             <input type="tel" name="girilen telefon numarası" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx">
+        </div>
+
+        <div>
+            <label for="tatlı">hngi tatlıyı istersiniz</label>
+            <br>
+            <select name="seçilen tatlı" id="tatlı" size="8">
+                <option value="sütlaç">sütlaç</option>
+                <option value="keşkül">keşkül</option>
+                <option value="aşure">aşure</option>
+            </select>
+        </div>
+        <div>
+            <label for="tatlı2">hngi tatlıyı istersiniz</label>
+            <br>
+            <select name="seçilen tatlı" id="tatlı2" size="8">
+                <optgroup label="sütlü tatlılıar">
+                    <option value="sütlaç">sütlaç</option>
+                    <option value="keşkül">keşkül</option>
+                    <option value="aşure">aşure</option>
+                </optgroup>
+                <optgroup label="şekerli tatlılar">
+                    <option value="künefe">künefe</option>
+                    <option value="kadayıf">kadayıf</option>
+                </optgroup>
+                
+            </select>
+
         </div>
         
  
