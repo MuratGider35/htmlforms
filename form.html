@@ -10,6 +10,14 @@
             border: 2px solid red;
             width: 50%;
         }
+        #yorum{
+            width: 300px;
+            height: 200px;
+        }
+        .hrv{
+            display: inline-block;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +112,32 @@
                 
             </select>
 
+        </div>
+        <div>
+            <label for="yorum">yorum</label>
+            <br>
+            <input type="textarea" name="girilen yorum" id="yorum" placeholder="lütfen yorum">
+        </div>
+        <div>
+            <label for="input-browser">browsers:</label>
+            <input type="text" name="kullanılan broser" id="input-browser" list="browsers">
+            
+            <datalist id="browsers">
+                <option value="firefox">firefox</option>
+                <option value="chorome">chorome</option>
+                <option value="safari">safari</option>
+                <option value="brave">brave</option>
+            </datalist>
+        </div>
+        <div>
+            <fieldset>
+                <legend>kişisel bilgiler</legend>
+                <label class="hrv" for="fname">isim</label>
+                <input type="text" name="isim" id="fname">
+                <br>
+                <label class="hrv" for="sname">soyisim</label>
+                <input type="text" name="soyisim" id="sname">
+            </fieldset>
         </div>
         
  
